@@ -1,10 +1,10 @@
-export interface ListNode {
-    val: number;
-    next: ListNode | null;
+export interface ListNode<T = number> {
+    val: T;
+    next: ListNode<T> | null;
 }
 
-export interface TreeNode {
-    val: number;
-    left: TreeNode | null;
-    right: TreeNode | null;
+export interface TreeNode<T = number> {
+    val: T;
+    left: TreeNode<T> | null;
+    right: TreeNode<T> | null;
 }

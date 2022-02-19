@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"command": "tsc ${file} --outDir dist --sourceMap --target es2021",
+			"command": "tsc ${file} --outDir dist --sourceMap --target es2021 --allowSyntheticDefaultImports",
 			"problemMatcher": [
 				"$tsc"
 			],
