@@ -6,7 +6,7 @@
   "author": "wyrj <yrj0103@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "esbuild": "esbuild --bundle --outfile=solution.js --platform=node"
+    "esbuild": "esbuild --bundle --outfile=dist/solution.js --platform=node"
   },
   "dependencies": {
     "lodash": "^4.17.21"
