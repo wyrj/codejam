@@ -9,6 +9,12 @@
 			],
 			"group": "build",
 			"label": "tsc: build - tsconfig.json"
-		}
+    }
+		{
+			"type": "shell",
+			"command": "yarn esbuild ${file}",
+			"group": "build",
+			"label": "esbuild"
+    }
 	]
 }
