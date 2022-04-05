@@ -7,7 +7,7 @@
 
     {
       "name": "CodeJam Launch Program",
-      "program": "${file}",
+      "program": "${workspaceFolder}/dist/solution.js",
       "args": ["<", "${fileDirname}/test.txt"],
       "request": "launch",
       "skipFiles": [

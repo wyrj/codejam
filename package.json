@@ -5,8 +5,9 @@
   "repository": "git@github.com:wyrj/codejam.git",
   "author": "wyrj <yrj0103@gmail.com>",
   "license": "MIT",
+  "type":"commonjs",
   "scripts": {
-    "esbuild": "esbuild --bundle --outfile=dist/solution.js --platform=node"
+    "esbuild": "esbuild --bundle --outfile=dist/solution.js --platform=node --sourcemap"
   },
   "dependencies": {
     "lodash": "^4.17.21"
