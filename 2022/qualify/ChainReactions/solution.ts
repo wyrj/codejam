@@ -8,13 +8,8 @@ async function resolve(F: number[], P: number[]): Promise<string> {
   for (let i = 0; i < F.length; i++) {
     nodes[P[i]].add(i + 1);
   }
-  let dfsCount = 0;
   async function dfs(idx: number): Promise<{ sum: number; minPick: number; }> {
-    dfsCount += 1;
-    if (dfsCount % 2000 === 0) {
-      dfsCount = 0;
-      await new Promise(resolve => setTimeout(resolve, 0));
-    }
+    await Promise.resolve();
     const childSet = nodes[idx];
     const fValue = F[idx - 1];
     if (childSet.size === 0) {
