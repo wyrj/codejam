@@ -1,6 +1,10 @@
 import { main } from '../../../utils/main';
 
-async function resolve(F: number[], P: number[]): Promise<string> {
+main(async (io) => {
+  await io.getIntArray();
+  const F = await io.getIntArray();
+  const P = await io.getIntArray();
+
   const nodes = Array.from(
     { length: F.length + 1 },
     () => new Set<number>(),
@@ -28,11 +32,4 @@ async function resolve(F: number[], P: number[]): Promise<string> {
     return { sum, minPick: minPick };
   }
   return `${(await dfs(0)).sum}`;
-}
-
-main(async (io, num) => {
-  await io.getIntArray();
-  const F = await io.getIntArray();
-  const P = await io.getIntArray();
-  io.printAns(num, await resolve(F, P));
 });
