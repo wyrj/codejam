@@ -2,7 +2,7 @@ import ReadLine from "readline";
 
 export class CustomIO {
   private input: string[];
-  private waitingResolve: (s: string) => void | null;
+  private waitingResolve: ((s: string) => void) | null;
   private rl: ReadLine.Interface;
 
   constructor() {
