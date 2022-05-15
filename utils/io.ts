@@ -33,7 +33,9 @@ export class CustomIO {
 
   public async getLine(): Promise<string> {
     if (this.input.length > 0) {
-      return this.input.shift();
+      const s = this.input[0];
+      this.input.shift();
+      return s;
     }
     return new Promise((resolve) => {
       this.waitingResolve = resolve;
