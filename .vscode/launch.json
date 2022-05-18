@@ -20,7 +20,7 @@
     {
       "type": "pwa-node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Leetcode Launch Program",
       "skipFiles": [
         "<node_internals>/**"
       ],
